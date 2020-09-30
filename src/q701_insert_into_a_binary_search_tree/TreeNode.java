@@ -1,9 +1,5 @@
-package binary_tree_postorder_traversal;
+package q701_insert_into_a_binary_search_tree;
 
-/**
- * @Description:
- * @Author: liuchen created at 23:17 2020-09-29
- */
 public class TreeNode {
     int val;
     TreeNode left;
@@ -15,5 +11,4 @@ public class TreeNode {
         this.left = left;
         this.right = right;
     }
-
 }

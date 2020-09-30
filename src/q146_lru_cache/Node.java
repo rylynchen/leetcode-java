@@ -1,4 +1,4 @@
-package lru_cache;
+package q146_lru_cache;
 
 /**
  * @Description:

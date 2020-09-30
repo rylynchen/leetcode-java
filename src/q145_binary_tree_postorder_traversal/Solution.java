@@ -1,6 +1,7 @@
-package binary_tree_postorder_traversal;
+package q145_binary_tree_postorder_traversal;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -34,5 +35,13 @@ public class Solution {
             this.help(root.right);
         }
         this.list.add(root.val);
+    }
+
+    public static void main(String[] args) {
+        int[] nums = new int[] {2, 7, 11, 15};
+        int target = 9;
+        q1_two_sum.Solution s = new q1_two_sum.Solution();
+        int[] keys = s.twoSum(nums, target);
+        System.out.println(Arrays.toString(keys));
     }
 }
