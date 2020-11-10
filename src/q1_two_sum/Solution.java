@@ -4,10 +4,17 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 /**
- * @Description:
+ * 两数之和
+ *
+ * 遍历nums, 同时生成map(key = target - num[i], val = i)
+ *
+ * Time: O(n), Space: O(n)
+ *
+ * @Link: https://leetcode-cn.com/problems/two-sum/
  * @Author: liuchen created at 14:29 2020-09-30
  */
 public class Solution {
+
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<>(nums.length);
         for (int i = 0; i < nums.length; ++i) {
@@ -18,7 +25,7 @@ public class Solution {
                 map.put(nums[i], i);
             }
         }
-        return new int[]{};
+        return new int[0];
     }
 
     public static void main(String[] args) {

@@ -3,7 +3,14 @@ package q70_climbing_stairs;
 import java.util.HashMap;
 
 /**
- * @Description:
+ * 爬楼梯
+ *
+ * Solution: 核心点，第n阶的方法表达式 f(n) = f(n-1) + f(n-2)
+ *
+ * Solution1: 动态规划, Time: O(n), Space: O(1)
+ * Solution2: 递归, Time: O(2^n), Space: O(n)
+ *
+ * @Link: https://leetcode-cn.com/problems/climbing-stairs/
  * @Author: liuchen created at 15:34 2020-10-22
  */
 public class Solution {

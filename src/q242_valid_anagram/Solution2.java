@@ -12,7 +12,7 @@ public class Solution2 {
             return false;
         }
         HashMap<Character, Integer> map = new HashMap<>(26);
-        for(int i = 0;i<s.length();i++) {
+        for (int i = 0; i < s.length(); i++) {
             char sc = s.charAt(i);
             char tc = t.charAt(i);
             if (sc == tc) {
@@ -38,5 +38,15 @@ public class Solution2 {
             }
         }
         return map.size() == 0;
+    }
+
+    public static void main(String[] args) {
+        String s = "anagram";
+        String t = "nagaram";
+        Solution2 solution2 = new Solution2();
+        System.out.println(solution2.isAnagram(s, t));
+        String s2 = "rat";
+        String t2 = "car";
+        System.out.println(solution2.isAnagram(s2, t2));
     }
 }
