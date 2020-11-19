@@ -3,7 +3,14 @@ package q283_move_zeroes;
 import java.util.Arrays;
 
 /**
- * @Description:
+ * 移动零
+ * <p>
+ * Solution1: 双指针，快指针正常循环遇到非0与慢指针交换值，慢指针指向当前第一个0位置
+ * Solution2: 循环2次，第一次，把所有非0存到nums[j++], 第二次从j到nums.length-1补0
+ * <p>
+ * Time: O(n), Space:O(1)
+ *
+ * @Link: https://leetcode-cn.com/problems/move-zeroes
  * @Author: liuchen created at 09:49 2020-10-22
  */
 public class Solution {
