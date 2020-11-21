@@ -4,8 +4,9 @@ package q74_search_a_2d_matrix;
  * 搜索二维矩阵
  * <p>
  * Solution: 先循环行判断是否在当前行，然后行内用二分查找
+ * Solution2: 视为一维升序数组，直接二分查找，[i][j]定位 i=mid/width, j=mid%width
  * <p>
- * Time:O(logN), Space:O(1)
+ * Time:O(log(mn)), Space:O(1)
  *
  * @Link: https://leetcode-cn.com/problems/search-a-2d-matrix/
  * @Author: liuchen created at 17:32 21/11/2020
