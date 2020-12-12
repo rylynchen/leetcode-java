@@ -3,6 +3,10 @@ package q1143_longest_common_subsequence;
 /**
  * 最长公共子序列
  * <p>
+ * Solution: 动态规划,转化为2维数组,f(i,j)表示[i,j]位置的最大公共子序列, 方程f(i,j) =
+ * text1[i] == text[j] : f(i-1,j-1) + 1
+ * text1[i] != text[j] : Max( f(i-1,j), f(i,j-1) )
+ * <p>
  * Time:O(n^2), Space:O(n^2)
  *
  * @Link: https://leetcode-cn.com/problems/longest-common-subsequence/

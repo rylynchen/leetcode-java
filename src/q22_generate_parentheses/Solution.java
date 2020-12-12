@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 括号生成
  * <p>
- * Solution:
+ * Solution: 左括号使用数量必须大于等于右括号使用数量，当前才有效
  *
  * @Link: https://leetcode-cn.com/problems/generate-parentheses/
  * @Author: liuchen created at 23:37 2020-11-03
