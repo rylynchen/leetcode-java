@@ -3,7 +3,7 @@ package q91_decode_ways;
 /**
  * 解码方法
  * <p>
- * Solution: 动态规划，f(n) = f(n-1) + 1(最后2个数字在1-26内)|0
+ * Solution: 动态规划，f(n) = f(n-1) + 0|f(n-2)(最后2个数字在1-26内)
  * <p>
  * Time:,Space:
  *
